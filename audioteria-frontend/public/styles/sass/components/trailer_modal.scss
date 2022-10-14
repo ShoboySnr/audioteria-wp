@@ -1,0 +1,88 @@
+.four {
+  @apply fixed flex left-0 top-0 w-full h-full overflow-x-auto;
+
+  .trailer-modal-background {
+    @apply bg-gray-5 pt-24 xl:pt-44 flex overflow-x-hidden align-middle;
+  }
+  .trailer-modal-content {
+    @apply m-auto w-11/12 md:w-4/5 relative;
+    .modal-video {
+      height: 338px;
+      @include respond(md) {
+        height: 538px;
+      }
+      @apply bg-black100 relative pl-6 md:px-14 py-5 flex flex-col;
+    }
+    .modal-title {
+      @apply text-xl md:text-4xl font-semibold text-light100 mt-auto;
+    }
+    .play {
+      transform: translate(-50%, -50%);
+      @apply absolute top-1/2 left-1/2;
+      svg {
+        @apply w-9 h-9 md:w-auto md:h-auto;
+      }
+    }
+
+    .modal-info {
+      @apply grid xl:grid-cols-2 text-base md:text-lg gap-x-40 gap-y-2.5;
+      > div {
+        grid-template-columns: 120px 120px;
+        @include respond(md) {
+          grid-template-columns: 120px 230px;
+        }
+        @apply grid gap-x-0;
+      }
+      .title {
+        @apply text-gray800 font-bold;
+      }
+      &-wrapper {
+        @apply bg-light100 pl-6 lg:pl-12 pr-2 lg:pr-8 pt-16 pb-48;
+      }
+    }
+  }
+  .close {
+    svg {
+      @apply w-9 h-9 md:w-auto md:h-auto;
+    }
+    @apply absolute -top-12 right-0 lg:top-0 lg:-right-16;
+  }
+  .options {
+    @apply flex gap-x-3 md:gap-x-6 mt-6 md:mt-14;
+    > button {
+      @apply flex flex-col items-center text-gray500 text-sm gap-2;
+    }
+    svg {
+      @apply w-7 h-7 md:w-auto md:h-auto;
+    }
+  }
+  .book-card-wrapper {
+    @apply grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 2xl:grid-cols-4 pr-4 gap-x-6 gap-y-12 md:gap-y-20 pl-0 mt-16 lg:mt-28;
+  }
+}
+.open {
+  @apply flex;
+}
+#trailer-modal {
+  transform: scale(0);
+  @apply z-50 left-0 top-0 w-full h-full fixed;
+  &.four {
+    transform: scale(1);
+    @apply z-0;
+    .trailer-modal-background {
+      @apply bg-gray-5;
+      .trailer-modal-content {
+        animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+      }
+    }
+  }
+}
+
+@keyframes blowUpModal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

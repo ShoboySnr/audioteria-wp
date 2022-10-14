@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/styles.css">
+	<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+	<title>Shopping Basket</title>
+	<script defer src="./components/book_card.js"></script>
+	<script defer src="./components/download_now_section.js"></script>
+	<script defer src="./components/navbar.js"></script>
+	<script defer src="./components/footer.js"></script>
+	<script defer src="./components/bag_item.js"></script>
+</head>
+
+<body class="bg-light100 lg:bg-gray600 ">
+	<nav-bar></nav-bar>
+	<div class="wrapper">
+		<section class="shopping">
+			<section class="shopping-bag">
+				<div class="header">
+					<p class="title">My Shopping Bag (3 Items)</p>
+					<a href="#" title="Continue shopping">Continue shopping</a>
+
+				</div>
+				<hr>
+				<div class="bag-items">
+					<bag-item image-src="/assets/book_card_sample.png" title="DAN DARE: SEASON 1"
+						description="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon"
+						writer="James Welly" price="19.99"></bag-item>
+					<bag-item image-src="/assets/book_card_sample.png" title="DAN DARE: SEASON 1"
+						description="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon"
+						writer="James Welly" price="19.99"></bag-item>
+					<bag-item image-src="/assets/book_card_sample.png" title="DAN DARE: SEASON 1"
+						description="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon"
+						writer="James Welly" price="19.99"></bag-item>
+				</div>
+			</section>
+			<section class="checkout">
+				<p>Total</p>
+				<div class="sub-total">
+					<span>Sub-total</span>
+					<span>£59.97</span>
+				</div>
+				<button onclick="window.location.href='./checkout.html'" class="checkout-button" title="Go to checkout">Go to checkout</button>
+				<button class="shopping-button" title="Go to checkout">Go to checkout</button>
+			</section>
+		</section>
+		<section class="book-card-section">
+			<h4>You might also be interested in these titles</h4>
+			<div class="book-card-wrapper">
+				<book-card image-src="/assets/book_card_sample.png" title="The Effect"
+					content="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon" price="£19.99">
+				</book-card>
+				<book-card image-src="/assets/book_card_sample.png" title="The Effect"
+					content="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon" price="£19.99">
+				</book-card>
+				<book-card image-src="/assets/book_card_sample.png" title="The Effect"
+					content="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon" price="£19.99">
+				</book-card>
+				<book-card image-src="/assets/book_card_sample.png" title="The Effect"
+					content="Ed Stoppard, Geoff McGivern, Heida Reed and Raad Rawi as the Mekon" price="£19.99">
+				</book-card>
+
+			</div>
+		</section>
+	</div>
+
+
+	<download-now-section></download-now-section>
+	<custom-footer></custom-footer>
+	<script src="./scripts/navbar.js"></script>
+</body>
+
+</html>

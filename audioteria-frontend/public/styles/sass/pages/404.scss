@@ -1,0 +1,14 @@
+.error-page {
+  padding-bottom: 537px;
+  @apply flex gap-y-3 flex-col items-center pt-36 bg-gray700;
+  h2 {
+    font-size: 85px;
+    @apply font-bold text-orange800;
+  }
+  p:nth-child(2) {
+    @apply text-xl text-black100;
+  }
+  p {
+    @apply text-base font-normal text-gray800;
+  }
+}

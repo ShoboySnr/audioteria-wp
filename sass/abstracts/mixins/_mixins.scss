@@ -1,0 +1,65 @@
+//MEDIA QUERY MANAGER
+/*
+0-640px: Phone
+640 - 768px: Tablet portrait
+768 - 1024px: Tablet landscape
+1024 - px: Small desktop styles
+$breakpoint arguments choices:
+-sm
+-md
+-lg
+-xl
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 40em) {
+      //640px
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media (min-width: 48em) {
+      //768px
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (min-width: 64em) {
+      // 1024px
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    @media (min-width: 80em) {
+      // 1280px
+      @content;
+    }
+  }
+  @if $breakpoint == 2xl {
+    @media (min-width: 112.5em) {
+      // 1800px
+      @content;
+    }
+  }
+  // @if $breakpoint == 2xl {
+    @media (min-width: $breakpoint) {
+      // 1800px
+      @content;
+    // }
+  }
+}
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}

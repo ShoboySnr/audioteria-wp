@@ -1,0 +1,33 @@
+.search {
+  margin-left: 0;
+}
+
+.search-container {
+  display: grid;
+  margin-top: 2.5rem;
+}
+
+.search-results-wrapper {
+  > .book-card {
+    @apply w-full min-w-[217px] max-w-[289px] flex flex-col items-center;
+
+    > a {
+      @apply overflow-visible;
+
+      img {
+        @apply w-auto min-w-[265px] h-[265px] object-cover;
+      }
+    }
+    
+    &-content {
+      height: calc( 100% - 265px);
+
+      .price-buy-section {
+        span, 
+        a {
+          @apply text-[1.125rem] text-center;
+        }
+      }
+    }
+  }
+} 

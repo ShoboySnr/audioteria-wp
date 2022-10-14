@@ -1,0 +1,119 @@
+* {
+  transition: .4s ease 0s;
+  text-transform: none;
+}
+
+.wrapper {
+  .book-nav {
+    @apply flex pl-7 text-gray300 text-xs mb-6;
+
+    .active {
+      @apply text-orange800;
+    }
+    li.separator {
+      @apply mx-1 sm:mx-1.5 md:mx-4;
+    }
+  }
+}
+
+.sub-nav {
+  @apply min-h-[10rem];
+
+  h2,
+  .title {
+    @apply text-[28px] lg:text-[36px] mb-[20px];
+  }
+}
+
+.nav-main-links {
+  @apply relative;  
+
+  .dropdown-back {
+    cursor: pointer;
+    @apply relative;
+
+    .basket-item-count {
+      @apply absolute flex items-center justify-center bg-[#CB5715] w-[20px] h-[20px] rounded-[50%] text-white top-[-2px] right-[-13px] text-[10px];
+    }
+  }
+
+  .dropdown-menu-mini-cart,
+  .audioteria-mini-cart {
+    transform: scale(0);
+    @apply fixed bg-[#efefef] top-[90px] right-[5%] py-[30px] px-[15px] rounded-[10px] z-[30];
+
+    #close-mini-cart {
+      @apply absolute top-[-10px] right-[-10px] h-[30px] w-[30px] bg-[#cccccc] rounded-[50px];
+    }
+
+    &.cart-open {
+      transform: scale(1);
+    }
+    
+
+    .woocommerce-mini-cart {
+      @apply flex flex-col gap-[10px] w-full;
+
+      .mini_cart_item {
+        @apply flex justify-between items-center gap-[15px] text-[14px];
+
+        .mini-cart-item-title {
+          @apply flex flex-nowrap;
+          .remove_from_cart_button {
+            @apply bg-[#ccc] w-[10px] h-[10px] inline-flex items-center justify-center p-[10px] rounded-[50%] mr-[10px];
+            
+          }
+        }
+      }
+    }
+
+    .woocommerce-mini-cart__total {
+      @apply flex justify-between text-[15px] font-semibold my-[15px];
+    }
+
+    .woocommerce-mini-cart__buttons {
+      @apply flex flex-col gap-[15px];
+
+      .button {
+        @apply w-full h-[40px] text-[15px] rounded-[10px] text-center flex justify-center items-center border-[1px] border-[#CB5715] font-semibold;
+
+        
+        &.view-bag {
+          @apply text-[#CB5715] bg-[transparent];
+
+          &:hover,
+          &:focus {
+            @apply bg-[#CB5715] text-[#f7f7f7];
+          }
+        }
+
+        &.checkout {
+          @apply bg-[#CB5715] text-[#f7f7f7];
+
+          &:hover,
+          &:focus {
+            @apply  text-[#CB5715] bg-[transparent];
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  .address-wrapper {
+    .footer-subtitle {
+      @apply mt-6;
+
+      &:first-of-type {
+        @apply mt-0;
+      }
+    }
+  }
+}
+
+body {
+  &.single-product {
+    @apply bg-light100 lg:bg-gray600;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+	<title> My Wishlist - Audioteria</title>
+	<script src="./components/navbar.js"></script>
+	<script src="./components/profile-tabs.js"></script>
+	<script src="./components/download_now_section.js"></script>
+	<script src="./components/footer.js"></script>
+</head>
+
+<body class="account">
+	<header>
+		<nav-bar></nav-bar>
+	</header>
+	<main class="account-main">
+		<ul class="account-nav">
+			<li>
+				<a title="Home" href="#">Home </a>
+			</li>
+			<li>
+				<a title="Action category" href="#">Login</a>
+			</li>
+			<li>
+				<a title="Action category" href="#">My Account</a>
+			</li>
+			<li class="active">
+				<a title="Action category" href="#">My Wishlist</a>
+			</li>
+		</ul>
+		<div>
+			<h2 class="account-header">My Account</h2>
+
+			<div class="account-container">
+				<profile-tabs active-page="my-wishlist"></profile-tabs>
+				<div class="account-content">
+					<h5 class="account-content-title">My Wishlist</h5>
+					<div class="wishlist-empty">
+						<svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M95.4687 29.8438C88.4375 10.9375 70.1562 11.7188 59.2187 18.2813L50.9375 35.9375L66.5625 34.5313L50.4687 55.1563L63.5937 51.7188L55.3125 84.375L52.8125 62.3438L34.2187 66.25L48.4375 43.75L36.25 42.0313L44.6875 22.6563C34.6875 12.6563 8.74998 10.7813 3.74998 34.8438C-2.34377 63.4375 46.4062 81.0938 55.1562 85.9375V86.0938H55.4687V85.9375C68.4375 77.3438 104.375 53.9063 95.4687 29.8438Z"
+								fill="#C4C4C4" />
+						</svg>
+						<p>Looks like your wishlist is empty</p>
+						<a href="#" title="Audiobooks page">Audiobooks you may like</>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<download-now-section></download-now-section>
+	<custom-footer></custom-footer>
+	<script src="./scripts/navbar.js"></script>
+	<script src="./scripts/profile-tabs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.contact-form-button {
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(203 87 21 / var(--tw-bg-opacity));
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.wpcf7-form {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    width: 100%;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    border-color: #CB5715;
+    padding: 1.5rem;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #46b450;
+    padding: 1.5rem;
+}
+
+.wpcf7-form-control-wrap {
+    width: 100%;
+}

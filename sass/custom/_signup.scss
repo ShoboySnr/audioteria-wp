@@ -1,0 +1,314 @@
+p.success-msg, header.p.success-msg {
+  text-align: center;
+  color: green !important;
+  font-weight: 600;
+  animation: slideIn 1s ease 0s 1 normal forwards;
+  -webkit-animation: slideIn 1s ease 0s 1 normal forwards;
+}
+
+.error-border {
+  border-color: #FF0000 !important;
+}
+
+.login-error {
+  text-align: center;
+  color: red !important;
+  animation: slideIn 1s ease 0s 1 normal forwards;
+  -webkit-animation: slideIn 1s ease 0s 1 normal forwards;
+  padding-bottom: 15px;
+}
+
+
+input#user_login.input, input#user_pass.input {
+  display: flex;
+  height: 3.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity));
+  width: 100%;
+}
+
+.login-remember {
+  display: none;
+}
+
+.error-text {
+  color: red !important;
+}
+
+.show-msg {
+  display: block;
+}
+
+div#page.site section.sign-in form#loginform p.login-submit input#wp-submit.button.button-primary {
+  display: flex;
+  height: 3.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 87 21 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#page > header > nav > div > a > img.nav-main-logo {
+  height: auto;
+  max-width: 13.5rem;
+}
+
+header > a > img.nav-main-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  display: flex;
+  max-width: 13.5rem;
+}
+
+.woocommerce form.login {
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25rem;
+  border: none;
+}
+
+
+.show-password-input {
+  display: none;
+}
+
+
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit,
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit:hover {
+  display: flex;
+  height: 3.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 87 21 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.forgot-password-wrapper {
+  margin-top: -4rem;
+}
+
+.sign-up-btn {
+  display: flex;
+  height: 3.5rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203, 87, 21);
+  --tw-text-opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.d-none {
+  display: none;
+}
+
+.woocommerce-error li {
+  color: #000;
+  text-align: center;
+}
+
+#page > section > form > small {
+  color: red;
+}
+
+.error-success {
+  border-color: green;
+}
+
+.woocommerce-form.woocommerce-form-register.register {
+  border: none !important;
+  padding: 0px;
+  margin-bottom: 2.25rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  row-gap: 2.25rem !important;
+}
+
+#reg_password {
+  display: flex;
+  height: 3.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 251 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity));
+}
+
+.woocommerce-error li {
+  color: red !important;
+}
+
+
+.reset-password form, .sign-in form, .sign-up form {
+  margin-top: 1.25rem;
+  margin-bottom: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.forgot-password-wrapper {
+  margin-bottom: 4rem !important;
+}
+
+.reset-password h3 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+.reset-msg .woocommerce-message {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.reset-msg p {
+  padding: 0 30px;
+}
+
+
+@media (min-width: 1024px) {
+  .reset-password, .sign-up {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 5em !important;
+    padding-bottom: 24rem;
+  }
+  .home {
+    .premier-releases-wrapper-item {
+      min-width: 404px;
+      margin-right: 24px;
+    }
+  }
+
+  .sign-in {
+    padding-top: 3rem !important;
+  }
+
+  .reset-password h2 {
+    padding-left: 0px !important;
+  }
+
+
+  .audioteria-login {
+    padding-top: 5rem;
+  }
+
+
+  .audioteria-login input.woocommerce-Input.woocommerce-Input--text.input-text {
+    width: 100% !important;
+  }
+
+  .reset-password form .update, .sign-in form .update, .sign-up form .update {
+    margin-top: -4rem;
+  }
+
+  .password-input {
+    max-width: 100% !important;
+  }
+
+  .sign-in form .update {
+    margin-top: 0px !important;
+  }
+
+}
+
+
+.about-tab-buttons button:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 414px) {
+  .sign-in {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .reset-password {
+    h2 {
+      text-align: center;
+    }
+
+  }
+
+  #woo_login_form {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .forgot-password-wrapper {
+    margin-right: 17px;
+    margin-top: -3rem;
+  }
+
+  input.woocommerce-Input {
+    width: 100%;
+  }
+
+  .woocommerce-form-register {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+
+  .billing .address-form input, .billing .address-form textarea {
+    width: 100% !important;
+  }
+
+
+  a.order-link, button#rate-toggle.rate-button {
+    padding: 10px !important;
+  }
+
+
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

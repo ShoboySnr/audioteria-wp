@@ -1,0 +1,26 @@
+footer {
+  .footer {
+    .footer-contact {
+      .address-wrapper {
+        .footer-subtitle {
+          @apply mt-2;
+        }
+      }
+    }
+
+    .footer-update {
+      .footer-form {
+        @apply mt-6;
+      }
+    }
+  }
+
+
+  .footer-footnote {
+    li {
+    list-style: none;
+    display: inline;
+  }
+  }
+
+}

@@ -1,0 +1,58 @@
+@layer components {
+  .wrapper {
+    @apply pt-7 md:px-8 lg:px-16;
+    max-width: 1440px;
+    @apply mx-auto;
+  }
+  .sub-nav {
+    background-image: url('/assets/sub_nav_dark_sm.png');
+    @include respond(md) {
+      background-image: url('/assets/sub_nav_dark.png');
+    }
+    @apply w-full bg-black100 justify-center flex items-center content-center;
+    min-height: 18rem;
+    .title {
+      font-size: 36px;
+      @include respond(md) {
+        font-size: 64px;
+      }
+      @apply font-bold text-light100;
+    }
+    // for inner category page
+    &-inner {
+      @apply flex-col gap-16 px-7 sm:px-16 lg:px-32 py-16 justify-between items-start pt-16 sm:flex-row bg-cover;
+      > div {
+        @apply flex flex-col;
+      }
+      .title {
+        font-size: 36px;
+      }
+      .subtitle {
+        max-width: 408px;
+        line-height: 17.85px;
+        @apply text-sm text-light100 mt-8;
+      }
+      .big-finish {
+        img {
+          @apply w-fit sm:ml-auto;
+        }
+        p {
+          @apply text-2xl font-bold text-light100 mt-7;
+        }
+      }
+    }
+  }
+  .book-nav {
+    @apply flex pl-7 lg:pl-0 text-gray300 text-xs mb-6;
+
+    .active {
+      @apply text-orange800;
+    }
+    li.seperator {
+      @apply mx-1 sm:mx-1.5 md:mx-4;
+    }
+  }
+  .book-card-wrapper {
+    @apply pt-7 px-7 lg:pl-0 pb-4 md:pb-9;
+  }
+}

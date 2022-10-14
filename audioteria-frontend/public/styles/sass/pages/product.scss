@@ -1,0 +1,103 @@
+@layer components {
+  .product-banner {
+    @apply bg-light100 xl:items-center pt-10 text-black100 flex flex-wrap;
+    @apply xl:flex-row flex-col p-6 xl:p-8 pr-8 
+	 2xl:gap-24 xl:gap-12 lg:gap-12 capitalize rounded-xl;
+    .image {
+      max-height: 501px;
+      max-width: 502px;
+      @apply w-full;
+    }
+    &-content {
+      max-width: 502px;
+      @apply flex flex-col gap-y-6 pt-8 xl:pt-0;
+      > :first-child {
+        @apply flex text-sm justify-between items-center content-center;
+        button,
+        div {
+          @apply flex flex-row items-center;
+        }
+        .play {
+          @apply ml-2;
+        }
+      }
+      .price,
+      .title {
+        @apply text-2xl xl:text-3xl font-semibold my-2.5 text-black100;
+      }
+      .writer,
+      .category {
+        @apply text-sm mb-1;
+      }
+      .writer {
+        @apply font-semibold;
+      }
+      .price {
+        @apply lg:text-2.5xl;
+      }
+      button.bag {
+        width: 100%;
+        @include respond(xl) {
+          width: 380px;
+        }
+        @include respond(xl) {
+          width: 418px;
+        }
+        @apply h-14 hover:bg-opacity-80 rounded-md text-light100 text-lg bg-orange800 flex justify-center items-center content-center;
+        svg {
+          @apply mr-5;
+        }
+      }
+      .others {
+        @apply flex justify-between;
+        > button {
+          @apply flex flex-row justify-center items-center text-sm;
+          svg {
+            @apply ml-2;
+          }
+        }
+      }
+    }
+  }
+  .content-section {
+    @apply mx-7 md:mx-0 mt-10 text-black100 flex flex-col capitalize;
+    &-tab {
+      @apply flex flex-row overflow-auto gap-x-1.5 pb-6 lg:pb-0;
+      button {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        @apply flex items-center justify-center whitespace-nowrap bg-light200 px-7 font-semibold py-2.5;
+      }
+      button.active {
+        @apply bg-light100;
+      }
+    }
+    .content {
+      min-height: 8rem;
+      @apply hidden lg:px-16 px-5 rounded-xl pt-12 pb-16 mb-24 bg-light100 rounded-tl-none;
+      .info {
+        @apply flex-col lg:flex-row flex gap-y-3 gap-x-16 font-semibold;
+        p {
+          @apply flex;
+        }
+        span {
+          @apply flex ml-2 font-normal normal-case;
+        }
+      }
+      .article {
+        @apply leading-7 normal-case mt-12 text-sm lg:text-base font-normal;
+      }
+    }
+    .active {
+      @apply block;
+    }
+  }
+  .book-card-section {
+    @apply mb-32;
+    h4 {
+      @apply text-lg font-semibold pl-7 md:pl-0;
+    }
+    .book-card-wrapper {
+      @apply flex-nowrap overflow-x-auto;
+    }
+  }
+}
